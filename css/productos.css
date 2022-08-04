@@ -1,0 +1,107 @@
+body {
+	background-color: gray;
+	color:  rgb(20, 20, 20);
+	overflow-x: hidden;
+	text-align: center;
+}
+	div {
+		margin: auto;
+	}
+
+	#catalogo {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+.menu {
+	width: 100%;
+	display: flex;
+	margin: auto;
+}
+	.submenu {
+		flex-grow: 1;
+		flex-wrap: wrap;
+	}
+	button {
+		font-family: 'Roboto Slab';
+		font-size: 25px;
+		width: 100%;
+		background-color: rgb(20, 20, 20);
+		color: white;
+		border: 0;
+		padding: 0;
+		margin: auto;
+	}
+	button:hover {
+		background-color: silver;
+		color: rgb(20, 20, 20);
+		font-weight: bold;
+	}
+	.agregar {
+		font-size: 15px;
+		padding-bottom: 2px;
+	}
+	.agregado {
+		font-size: 15px;
+		background-color: purple;
+		color: white;
+		padding-bottom: 2px;
+	}
+
+.datos , .foto {
+	width: 100%;
+	display: flex;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	margin: auto;
+	margin-top: 10px;
+}
+	.repuesto {
+		background-color: whitesmoke;
+		border: 10px solid whitesmoke;
+	}
+	.datosAuto {
+		background-color: white;
+		border: 10px solid white;
+	}
+	.repuesto , .datosAuto {
+		font-size: 15px;
+		width: 25%;
+		box-sizing: border-box;
+		color: rgb(20, 20, 20);
+		margin: 0px auto;
+	}
+	.repuesto:hover , .datosAuto:hover {
+		border: 10px solid purple;
+		box-shadow: 0px 0px 50px pink;
+	}
+	.repuesto:focus , .datosAuto:focus {
+		border: 10px solid purple;
+		box-shadow: 0px 0px 50px pink;
+	}
+	.fotoRepuesto , .fotoAutoNuevo , .fotoAutoViejo {
+		width: 150px;
+	}
+
+h2 {
+	margin-top: 10px;
+	padding-top: 10px;
+	margin-bottom: 5px;
+}
+h3 {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+h4 {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+.final {
+	width: 100%;
+	display: block;
+	background-color: whitesmoke;
+	color: rgb(20, 20, 20);
+	margin: auto;
+}
