@@ -19,4 +19,5 @@ function agregarAlCarrito(id) { //defino la funcion que lo va a cargar
   console.log(autos) //veo si se cargan
   return autos
 }
-//agregue ONCLICK al mapeo de las cards (POSTA ES MAS FACIL LABURARLO ASI)
+//agregue ONCLICK DE ESTA FUNCION al mapeo de las cards
+ //LOS AUTOS SE VEN EN CONSOLA POR AHORA
