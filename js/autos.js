@@ -1,4 +1,4 @@
-let listaAutos = [{   
+let listaAutos = [{ //defino array de productos
     id: 1,
     marca: "ford",
     color: "azul",
