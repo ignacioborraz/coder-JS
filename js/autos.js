@@ -72,5 +72,3 @@ let listaAutos = [{ //defino array de productos
     foto: "src/fotoAutoViejo.png"
   }
 ]
-
-let catalogo = document.getElementById('catalogo');
