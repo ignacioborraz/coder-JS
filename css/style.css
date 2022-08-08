@@ -31,14 +31,14 @@ body {
 	margin-top: 10px;
 }
 
-#catalogo {
+#wines {
 	display: flex;
 	flex-wrap: wrap;
 	flex-grow: 1;
 	align-items: center;
 }
 
-.datosAuto {
+.datos {
 	background-color: white;
 	border: 10px solid white;
 	font-size: 15px;
@@ -49,11 +49,11 @@ body {
 	flex-direction: column;
 	align-items: center;
 }
-.datosAuto:hover {
+.datos:hover {
 	border: 10px solid purple;
 	box-shadow: 0px 0px 50px pink;
 }
-.datosAuto:focus {
+.datos:focus {
 	border: 10px solid purple;
 	box-shadow: 0px 0px 50px pink;
 }
@@ -68,11 +68,9 @@ h4 {
 	margin-bottom: 5px;
 }
 
-.fotoAuto {
-	width: 150px;
+.foto {
+	height: 150px;
 }
-
-
 
 button {
 	font-family: 'Roboto Slab';
@@ -80,14 +78,29 @@ button {
 	width: 100%;
 	background-color: rgb(20, 20, 20);
 	color: white;
-	border: 0;
-	padding: 0;
-	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
 }
 button:hover {
 	background-color: silver;
 	color: rgb(20, 20, 20);
 	font-weight: bold;
+	border: 0 solid white;
+}
+
+#last {
+	font-size: 20px;
+	font-weight: bold;
+	width: 100%;
+	background-color: purple;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	margin-bottom: 10px;
 }
 
 #carrito {
