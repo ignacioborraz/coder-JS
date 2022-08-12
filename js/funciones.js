@@ -1,5 +1,3 @@
-/* Definir una función que tome como parámetros los datos del producto y retorne un template string.
-- Utilizar el HTML ya desarrollado por el equipo de front */
 function plantilla(objeto) {
     let nombreCorrecto = objeto.nombre.charAt(0).toUpperCase()+objeto.nombre.slice(1).toLowerCase()
     let varietalCorrecto = objeto.varietal.charAt(0).toUpperCase()+objeto.varietal.slice(1).toLowerCase()
@@ -26,8 +24,8 @@ function impresionEnHtml(idDelHtml,objeto) {
     //document.querySelector(`#${id}`).innerHTML = plantilla(objeto)
 }
 
-impresionEnHtml('todos',vino1)
-impresionEnHtml('todos',vino2)
-impresionEnHtml('todos',vino1)
-impresionEnHtml('todos',vino1)
+//impresionEnHtml('todos',vino1)
+//impresionEnHtml('todos',vino2)
+//impresionEnHtml('todos',vino1)
+//impresionEnHtml('todos',vino1)
 //el id todos se utilizará para hacer la impresion
