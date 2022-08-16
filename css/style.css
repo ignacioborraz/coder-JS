@@ -143,3 +143,12 @@ button:hover {
 	display: flex;
 	flex-direction: column;
 }
+
+.formulario {
+	display: flex;
+	width: 100%;
+}
+
+.grow {
+	flex-grow: 1;
+}

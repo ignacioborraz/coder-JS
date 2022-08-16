@@ -8,6 +8,22 @@
 <body>
     <header class="bar header">mr wines - the taste of vines</header>
     <main>
+        <form class="filtro">
+            <label for="palabra">Escriba</label>
+            <input type="text" placeholder="un varietal" id="palabra" name="varietal" class="grow">
+            <label for="mayor">
+                MAYOR A 2010
+            </label>
+            <input type="radio" id="mayor" name="filtroFecha">
+            <label for="menor">
+                MENOR A 2010
+            </label>
+            <input type="radio" id="menor" name="filtroFecha">
+            <label for="todosT">
+                TODOS
+            </label> 
+            <input type="radio" id="todosT" name="filtroFecha"> 
+        </form>
         <div id="todos"></div>
     </main>
     <footer class="bar footer">mr wines - the taste of vines</footer>
