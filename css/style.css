@@ -136,3 +136,8 @@ button:hover {
 .button {
 	width: 4%;
 }
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+}
