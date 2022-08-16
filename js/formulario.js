@@ -12,4 +12,6 @@ function subirProducto(event) {
     return vinoDelFormulario
 }
 
+//EL FORMULARIO NO SE TIENE QUE RESETEAR HASTA DESPUES DE PASAR TODAS LAS VALIDACIONES
+
 //el objeto que retorna hay que pasarselo a la funcion que guarda el producto en el almacenamiento y lo renderiza

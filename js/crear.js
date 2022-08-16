@@ -8,8 +8,10 @@ let arrayDeVinos = []
 
 function crearProducto(objeto) { //la función ahora necesita recibir la captura de datos del formulario
     validarDatos(objeto) //primero se validan los datos
-    renderizarTodos('todos',productosDelAlmacenamiento) //luego renderizo todo
-    renderizarMayores('mayores',productosDelAlmacenamiento) //luego los productos mayores a 2010
+    //si quiero puedo renderizar todos los vinos, solo los mayores O NO RENDERIZAR NADA y avisar que el vino se creó correctamente
+    alert('el vino se cargó correctamente')
+    //renderizarTodos('todos',productosDelAlmacenamiento) //luego renderizo todo
+    //renderizarMayores('mayores',productosDelAlmacenamiento) //luego los productos mayores a 2010
 }
 
 function validarDatos(objeto) { //funcion que ejecuta las validaciones y carga de datos  
@@ -24,13 +26,17 @@ function validarDatos(objeto) { //funcion que ejecuta las validaciones y carga d
         alert('el varietal del vino tiene que tener al menos 4 letras')
     }
     let foto = objeto.foto
-    if (foto.length<10) {
-        alert('la foto del vino tiene que tener al menos 10 letras')
+    if (foto.length<15) {
+        alert('la foto del vino tiene que tener al menos 15 letras')
     }
     let estacionamiento = objeto.estacionamiento
     if (isNaN(estacionamiento) || estacionamiento<1900) {
         alert('el año de estacionamiento tiene que ser mayor a 1900')
     }
+    //
+    //ACÁ HAY QUE AGREGAR UNA FUNCIÓN/METODO PARA RESETEAR EL FORMULARIO
+    //SE HACE ACÁ PARA QUE UNA VEZ VALIDADOS TODOS LOS CAMBIOS: AHI SI SE BORRE TODO
+    //
     //UNICAMENTE si se cumplen TODAS las condiciones anteriores creo el objeto y ejecuto todo el procedimiento de creacion de productos
     if (nombre.length>=4 && varietal.length>=4 && foto.length>=10 && estacionamiento>=1900) {
         let vino = {
@@ -48,6 +54,7 @@ function validarDatos(objeto) { //funcion que ejecuta las validaciones y carga d
     console.log(productosDelAlmacenamiento)
 }
 
-let botonSubir = document.getElementById('subir') //selecciono el boton
-botonSubir.addEventListener('click', (event) => crearProducto(subirProducto(event))) //aplico funcion al evento
+let botonCargar = document.getElementById('cargar') //selecciono el boton
+botonCargar.addEventListener('click', (event) => crearProducto(subirProducto(event))) //aplico funcion al evento
+//a crear producto le paso el objeto que returna subirProducto (que es el objeto con todos los datos capturados del formulario)
 console.log(arrayDeVinos)
