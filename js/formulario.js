@@ -1,17 +1,15 @@
-
-//lista = [...lista].map(e => e.value) //transformo la lista en array
-//.. spread opeator ( operador de dispersion ) sirve para "meterse" adentro
-
 //cargo una propiedad cuyo nombre es el name de cadaElemento
 //a esa propiedad le asigno el valor de cadaElemento
 
 function subirProducto(event) {
-    event.preventDefault()
-    let lista = document.querySelectorAll("input[type=text]")
-    let vinoDelFormulario = {}
+    event.preventDefault() //prevengo el evento
+    let lista = document.querySelectorAll("input[type=text]") //selecciono todos los inputs
+    let vinoDelFormulario = {} //defino el objeto vino
     lista.forEach(cadaElemento => vinoDelFormulario[cadaElemento.name] = cadaElemento.value)
+    //por cada elemento de la lista, "cargo el objeto"
+    //cada carga suma una propiedad al objeto con el nombre de cada elemento y el valor de cada elemento
     console.log(vinoDelFormulario)
     return vinoDelFormulario
 }
 
-//creo la funcion que captura los datos y que hay que pasarle a la funcion validacionDeDatos
+//el objeto que retorna hay que pasarselo a la funcion que guarda el producto en el almacenamiento y lo renderiza

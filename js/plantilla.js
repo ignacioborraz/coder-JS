@@ -1,4 +1,4 @@
-function plantilla(objeto) {
+function generarPlantilla(objeto) {
     let nombreCorrecto = objeto.nombre.charAt(0).toUpperCase()+objeto.nombre.slice(1).toLowerCase()
     let varietalCorrecto = objeto.varietal.charAt(0).toUpperCase()+objeto.varietal.slice(1).toLowerCase()
     //charAt(0): es un metodo de string que accede a la posicion que se pone entre comillas
@@ -14,18 +14,7 @@ function plantilla(objeto) {
         </div>
     `
 }
-//console.log(plantilla(vino1))
-//console.log(plantilla(vino2))
 
-function impresionEnHtml(idDelHtml,objeto) {
-    let template = plantilla(objeto) //variable que va a contener el template de ese objeto
-    let contenedor = document.getElementById(`${idDelHtml}`) //variable que selecciona un elemento de DOM
-    contenedor.innerHTML += template //al selector le imprimo el template
-    //document.querySelector(`#${id}`).innerHTML = plantilla(objeto)
+function imprimirEnHtml(idDelHtml,objeto) {
+    document.querySelector(`#${idDelHtml}`).innerHTML += generarPlantilla(objeto) //forma optimizada
 }
-
-//impresionEnHtml('todos',vino1)
-//impresionEnHtml('todos',vino2)
-//impresionEnHtml('todos',vino1)
-//impresionEnHtml('todos',vino1)
-//el id todos se utilizará para hacer la impresion
