@@ -9,7 +9,7 @@ function renderizadoConFor (idDelHtml,arrayDeProductos) {
         impresionEnHtml(idDelHtml,arrayDeProductos[i])
     }
 }
-let productos = [vino1,vino2,vino2,vino2,vino1,vino1,vino2]
+//let productos = [vino1,vino2,vino2,vino2,vino1,vino1,vino2]
 //renderizadoConFor('todos',productos)
 
 function renderizadoConForIn (idDelHtml,arrayDeProductos) {
@@ -25,6 +25,8 @@ function renderizadoConForIn (idDelHtml,arrayDeProductos) {
 //renderizadoConForIn('todos',productos) //renderiza 5 productos por el for of y 5 productos por el for of
 
 function renderizadoConEach (idDelHtml,arrayDeProductos) {
+    let contenedor = document.getElementById(`${idDelHtml}`) //al selector lo inicio vacío
+    contenedor.innerHTML = ""
     //quiero ingresar un array de objetos
     //quiero mapear para transformarlo en un array de templates
     arrayDeProductos.forEach(cadaElemento => impresionEnHtml(idDelHtml,cadaElemento))

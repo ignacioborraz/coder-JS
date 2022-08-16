@@ -14,8 +14,8 @@ function plantilla(objeto) {
         </div>
     `
 }
-console.log(plantilla(vino1))
-console.log(plantilla(vino2))
+//console.log(plantilla(vino1))
+//console.log(plantilla(vino2))
 
 function impresionEnHtml(idDelHtml,objeto) {
     let template = plantilla(objeto) //variable que va a contener el template de ese objeto
