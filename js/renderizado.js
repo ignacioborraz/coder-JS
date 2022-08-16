@@ -29,7 +29,7 @@ function renderizadoConEach (idDelHtml,arrayDeProductos) {
     //quiero mapear para transformarlo en un array de templates
     arrayDeProductos.forEach(cadaElemento => impresionEnHtml(idDelHtml,cadaElemento))
 }
-renderizadoConEach('todos',productos)
+//renderizadoConEach('todos',productos)
 
 /* Definir una función que tome como parámetros el id de una etiqueta html y
 //un array de productos y retorne la impresion de los productos
@@ -67,4 +67,4 @@ function filter (idDelHtml,arrayDeProductos) {
     console.log(arrayFiltrado)
     renderizadoConEach(idDelHtml,arrayFiltrado) //llamo a la funcion anterior, porque tengo que imprimir un array
 }
-filter('mayores',productos)
+//filter('mayores',productos)
