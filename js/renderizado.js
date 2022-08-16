@@ -3,7 +3,15 @@ function renderizarTodos(idDelHtml,arrayDeProductos) {
     arrayDeProductos.forEach(cadaElemento => imprimirEnHtml(idDelHtml,cadaElemento)) //luego le renderizo todos los productos
 }
 
-function renderizarMayores(idDelHtml,arrayDeProductos) {
-    let arrayFiltrado = arrayDeProductos.filter(cadaElemento => cadaElemento.estacionamiento>2010)
-    renderizarTodos(idDelHtml,arrayFiltrado) //llamo a la funcion anterior, porque tengo que imprimir un array
+//fue necesario cambiar las funciones de renderizado
+//para que returnen los arrays correspondientes y poder seguir filtrandolos en otras funciones
+//hecho este cambio, como no se imprime/renderiza nada: EL PARAMETRO idDelHtml no es necesario
+//la impresion se realizará con la funcion de arriba con el array de productos filtrado
+
+function filtrarMayores(arrayDeProductos) {
+    return arrayDeProductos.filter(cadaElemento => cadaElemento.estacionamiento>2010)
+}
+
+function filtrarMenores(arrayDeProductos) {
+    return arrayDeProductos.filter(cadaElemento => cadaElemento.estacionamiento<=2010)
 }
