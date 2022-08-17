@@ -1,1 +1,0 @@
-renderizarTodos('todos',productosDelAlmacenamiento) //renderizo todo
