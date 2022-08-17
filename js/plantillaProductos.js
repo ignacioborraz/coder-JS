@@ -11,6 +11,7 @@ function generarPlantilla(objeto) {
             <p>Nombre: <b>${nombreCorrecto}</b></p>
             <p>Varietal: <b>${varietalCorrecto}</b></p>
             <p>Estacionamiento: <b>${objeto.estacionamiento}</b></p>
+            <input type='button' onClick='agregarOquitar(${objeto.id})' value='favoritos'>
         </div>
     `
 }
