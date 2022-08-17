@@ -25,14 +25,14 @@
             <label for="todosT">
                 TODOS
             </label> 
-            <input type="radio" id="todosT" name="filtroFecha"> 
+            <input type="radio" id="todosT" checked name="filtroFecha"> 
         </form>
         <div id="todos"></div>
     </main>
     <footer class="bar footer">mr wines - the taste of vines</footer>
-    <script src="js/almacenamiento.js"></script>
-    <script src="js/plantilla.js"></script>
-    <script src="js/renderizado.js"></script>
-    <script src="js/mostrar.js"></script>    
+    <script src="js/almacenamiento.js"></script> <!-- primero cargo los productos -->
+    <script src="js/plantilla.js"></script> <!-- despues cargo las funciones de plantilla -->
+    <script src="js/renderizado.js"></script> <!-- luego las del renderizado dinamico -->
+    <script src="js/filtros.js"></script> <!-- luego los filtros -->
 </body>
 </html>
