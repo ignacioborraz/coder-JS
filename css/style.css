@@ -39,7 +39,7 @@ main {
 	align-items: center;
 }
 
-#wines , #todos, #mayores, #todosTodos {
+#wines , #todos, #mayores, #todosTodos, #favoritos{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
