@@ -12,22 +12,12 @@
     </header>
     <main>
         <div id="favoritos">
-            <div id='1234567' class='datos'>
-                <img class="foto" src='https://images.vivino.com/thumbs/bdLSx1g9TOqQugWNh2EWug_pb_600x600.png'>
-                <p>La puerta - Bonarda</p>
-                <input type='button' value='agregar'>
-            </div>
-            <div id='2345678' class='datos'>
-                <img class="foto" src='https://craftednicaragua.com/wp-content/uploads/2018/07/Graffigna-Centenario-Pinot-Grigio_b48a827bf49e42c51062f8081dedd265.jpg'>
-                <p>Graffigna - Malbec</p>
-                <input type='button' value='agregar'>
-            </div>
         </div>
+        <input type='button' onclick='borrarFavoritos()' value='borrar todo'>
     </main>
     <footer class="bar footer">mr wines - the taste of vines</footer>
     <script src="js/almacenamiento.js"></script>
-    <script src="js/plantillaFavoritos.js"></script> <!-- despues cargo las funciones de plantilla -->
-    <script src="js/renderizadoFav.js"></script> <!-- luego las del renderizado dinamico -->
-    <script src="js/agregarOquitar.js"></script>
+    <script src="js/plantillaFavoritos.js"></script>
+    <script src="js/favoritos.js"></script>
 </body>
 </html>
