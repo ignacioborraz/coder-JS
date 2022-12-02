@@ -15,3 +15,17 @@ function filtrarMayores(arrayDeProductos) {
 function filtrarMenores(arrayDeProductos) {
     return arrayDeProductos.filter(cadaElemento => cadaElemento.estacionamiento<=2010)
 }
+
+let apiUrl = 'https://mrwines.herokuapp.com/api/wines'
+
+const fetchData = async () => {
+    try {
+        let data = await fetch(apiUrl)
+        data = data.json()
+        console.log(data)
+    } catch(error) {
+        console.log(error.message)
+    }
+}
+
+fetchData()
