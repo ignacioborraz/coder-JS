@@ -35,7 +35,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	justify-content: center;
 	align-items: center;
 }
 
@@ -51,7 +50,8 @@ main {
 	background-color: white;
 	border: 10px solid white;
 	font-size: 15px;
-	width: 23%;
+	width: 22%;
+	min-width: 240px;
 	margin: 10px 0;
 	box-sizing: border-box;
 	color: rgb(20, 20, 20);
@@ -147,13 +147,38 @@ button:hover {
 
 input {
 	flex-grow: 1;
-	margin-bottom: 5px;
+	padding: 2px;
+}
+
+.input-text {
+	margin-right: 10px;
 }
 
 label {
-	margin-top: 10px;
+	margin: 5px 10px;
 }
 
 .grow {
 	flex-grow: 1;
+}
+
+.flex {
+	display: flex;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.center {
+	justify-content: center;
+	align-items: center;
+}
+
+.borrar {
+	flex-grow: 0;
 }

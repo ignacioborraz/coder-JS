@@ -7,33 +7,28 @@
 </head>
 <body>
     <header class="bar header">
+        <a href="#" class="bar navBar">index</a>
         <a href="formulario.html" class="bar navBar">formulario</a>
         <a href="favoritos.html" class="bar navBar">favoritos</a>
     </header>
     <main>
         <form class="filtro">
-            <label for="palabra">Escriba</label>
-            <input type="text" placeholder="un varietal" id="palabra" name="varietal" class="grow">
-            <label for="mayor">
-                MAYOR A 2010
-            </label>
-            <input type="radio" id="mayor" name="filtroFecha">
-            <label for="menor">
-                MENOR A 2010
-            </label>
-            <input type="radio" id="menor" name="filtroFecha">
-            <label for="todosT">
-                TODOS
-            </label> 
-            <input type="radio" id="todosT" checked name="filtroFecha"> 
+            <pre id="nombre" class="flex center">
+                <label for="palabra">Escriba</label>
+                <input type="text" placeholder="un nombre" id="palabra" name="nombre" class="input-text grow">
+            </pre>
+            <pre id="varietal" class="flex wrap center"></pre>
         </form>
         <div id="todos"></div>
     </main>
     <footer class="bar footer">mr wines - the taste of vines</footer>
-    <script src="js/almacenamiento.js"></script> <!-- primero cargo los productos -->
-    <script src="js/plantillaProductos.js"></script> <!-- despues cargo las funciones de plantilla -->
-    <script src="js/renderizado.js"></script> <!-- luego las del renderizado dinamico -->
-    <script src="js/filtros.js"></script> <!-- luego los filtros -->
-    <script src="js/favoritos.js"></script>
+    <script src="js/recibir.js"></script> <!-- primero cargo el almacenamiento -->
+    <script src="js/almacenar-espacio.js"></script> <!-- primero cargo el almacenamiento -->
+    <script src="js/normalizar.js"></script> <!-- luego cargo las funciones que necesita la pagina-->
+    <script src="js/imprimir-checks.js"></script>
+    <script src="js/imprimir-productos.js"></script>
+    <script src="js/filtrar.js"></script>
+    <script src="js/almacenar-gestion.js"></script>
+    <script src="js/fetchear-index.js"></script>
 </body>
 </html>

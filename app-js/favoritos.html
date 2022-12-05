@@ -9,15 +9,18 @@
     <header class="bar header">
         <a href="index.html" class="bar navBar">index</a>
         <a href="formulario.html" class="bar navBar">formulario</a>
+        <a href="#" class="bar navBar">favoritos</a>
     </header>
     <main>
         <div id="favoritos">
         </div>
-        <input type='button' onclick='borrarFavoritos()' value='borrar todo'>
+        <input type='button' class='borrar' onclick='borrarFavoritos()' value='borrar todo'>
     </main>
     <footer class="bar footer">mr wines - the taste of vines</footer>
-    <script src="js/almacenamiento.js"></script>
-    <script src="js/plantillaFavoritos.js"></script>
-    <script src="js/favoritos.js"></script>
+    <script src="js/almacenar-espacio.js"></script> <!-- primero cargo el almacenamiento -->
+    <script src="js/normalizar.js"></script> <!-- luego cargo las funciones que necesita la pagina-->
+    <script src="js/imprimir-favoritos.js"></script>
+    <script src="js/almacenar-gestion.js"></script>
+    <script src="js/fetchear-favoritos.js"></script>
 </body>
 </html>
